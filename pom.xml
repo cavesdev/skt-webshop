@@ -11,5 +11,7 @@
   </properties>
   <modules>
     <module>common-library</module>
+    <module>management-app</module>
+    <module>service</module>
   </modules>
 </project>
