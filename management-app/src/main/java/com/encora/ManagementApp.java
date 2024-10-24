@@ -10,7 +10,6 @@ public class ManagementApp extends SpringBootServletInitializer {
     //comment below if deploying outside web container -->
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(ManagementApp.class);
     }
 
     public static void main(String[] args) {
