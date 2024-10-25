@@ -20,14 +20,14 @@ import java.util.List;
 public class ProductController {
     private final ProductService productService;
 
-    @GetMapping("/")
+    @GetMapping
     public String listProducts(Model model) {
         List<Product> products = productService.getAllProducts();
         model.addAttribute("products", products);
         return "listProducts";
     }
 
-    @PostMapping("/")
+    @PostMapping
     public RedirectView createProduct(@ModelAttribute Product product, RedirectAttributes redirectAttributes) {
         final RedirectView redirectView = new RedirectView("/products", true);
         Product savedProduct = productService.createProduct(product);
